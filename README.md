@@ -34,3 +34,5 @@ Testes executados no ambiente Windows e MacOS, via navegador Chrome, após a exe
     cucumber
     bundle exec cucumbers
     cucumber -t @compra_ok
+
+![evidencia_console](https://user-images.githubusercontent.com/21012745/50319411-65c8f480-04ae-11e9-8c0f-2e257d1ab7c7.jpg)
