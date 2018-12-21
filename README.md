@@ -19,7 +19,8 @@ Driver
 *Chromedriver
 
 Testes executados no ambiente Windows e MacOS, via navegador Chrome, após a execução na pasta raiz do projeto
-é criado o arquivo "report.html" que pode ser vizualizado via web.
+é criado o arquivo "report.html" que pode ser vizualizado via web com a evidencia foco em anexo. São salvas automaticamente na pasta "logs" dentro do projeto.
+As evidencias de execução ficam salvas na pasta "data" dentro do projeto, com a hora que foi realizado a compra.
 
 **Baixar o projeto**
 
