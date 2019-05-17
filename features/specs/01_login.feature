@@ -28,8 +28,16 @@ Cenário: Login sucesso
 Cenário: Senha incorreta 
     Quando eu clicar no botão Acesse o Sistema 
     E preencher os campos código e login com dados validos 
-    E preencher a senha com dados inválidos 
-    Então deve exibir mensagem de alerta
+    E preencher a senha com dados incorretos 
+    
+
+@senhaexpirada 
+Cenário: Senha experida 
+    Dado eu clicar no botão Acesse o Sistema 
+    Quando eu preencher os campos código e login com dados validos 
+    E preencher a senha com dados incorretos
+    E preencher a senha com dados incorretos   
+    Então deve exibir alerta para efetuar a troca de senha de acesso
     
 
 

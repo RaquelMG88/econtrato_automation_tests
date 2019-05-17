@@ -34,7 +34,7 @@ Quando("preencher os campos código e login com dados validos") do
   find("button[class='btn btn-lg btn-login']").click
 end
 
-Quando("preencher a senha com dados inválidos") do
+Quando("preencher a senha com dados incorretos") do
   find("input[value='2']").click
   find("input[value='3']").click
   find("input[value='0']").click
@@ -42,11 +42,7 @@ Quando("preencher a senha com dados inválidos") do
   find("input[value='1']").click
   find("input[value='7']").click
   find("input[id='Body_btnEntrar']").click
-  page.execute_script("$('.bootbox-close-button').click();")
-end
-
-Então("deve exibir mensagem de alerta") do
-  page.driver.browser.switch_to.alert.accept
+  expect(page).to have_content "Senha incorreta. Contate o suporte para maiores informações."
 end
 
 Quando("preencher os campos com dados válidos") do
