@@ -5,7 +5,5 @@
  gem 'rspec'
  gem 'capybara'
  gem 'pry'
- gem 'faker'
- gem 'cpf_faker'
- gem 'ffaker'
+
  
